@@ -7,6 +7,11 @@ import org.springframework.cglib.proxy.MethodProxy;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
+import springfox.documentation.builders.PathSelectors;
+import springfox.documentation.builders.RequestHandlerSelectors;
+import springfox.documentation.spi.DocumentationType;
+import springfox.documentation.spring.web.plugins.Docket;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 import javax.servlet.ServletOutputStream;
 import java.lang.reflect.InvocationHandler;
@@ -18,6 +23,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 @Configuration
 @Component
+@EnableSwagger2
 public class UserConfig {
 
 
