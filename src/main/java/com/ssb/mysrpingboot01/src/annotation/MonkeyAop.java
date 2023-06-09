@@ -2,6 +2,8 @@ package com.ssb.mysrpingboot01.src.annotation;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
+import org.springframework.boot.autoconfigure.AutoConfigurationPackage;
+import org.springframework.boot.autoconfigure.AutoConfigurationPackages;
 import org.springframework.stereotype.Component;
 
 @Aspect

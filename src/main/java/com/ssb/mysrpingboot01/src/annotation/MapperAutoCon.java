@@ -1,5 +1,6 @@
 package com.ssb.mysrpingboot01.src.annotation;
 
+import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.context.annotation.Import;
 
 import java.lang.annotation.*;
@@ -9,4 +10,5 @@ import java.lang.annotation.*;
 @Documented
 @Import(MapperAutoConfigureRegistrar.class)
 public @interface MapperAutoCon {
+
 }

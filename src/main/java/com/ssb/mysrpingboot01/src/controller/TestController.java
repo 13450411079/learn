@@ -2,6 +2,7 @@ package com.ssb.mysrpingboot01.src.controller;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.ssb.mysrpingboot01.src.entity.MyTable;
+import com.ssb.mysrpingboot01.src.mapper.MyTableMapper;
 import com.ssb.mysrpingboot01.src.service.IMyTableService;
 import com.zaxxer.hikari.HikariDataSource;
 import io.swagger.annotations.ApiOperation;
@@ -22,6 +23,9 @@ public class TestController {
 
     @Autowired
     private IMyTableService myTableService;
+
+    @Autowired
+    private MyTableMapper mapper;
 //    @Autowired
 //    private MyHashTemplate myHashTemplate;
 
@@ -29,6 +33,7 @@ public class TestController {
     @ApiOperation("TEST!!")
     public String test(){
         List<Map<String, Object>> maps = template.queryForList("select * from my_table");
+        mapper.getList();
         myTableService.list(new QueryWrapper<MyTable>().eq("id", 1));
         return "111";
 //        return myHashTemplate.myHash("dachao");

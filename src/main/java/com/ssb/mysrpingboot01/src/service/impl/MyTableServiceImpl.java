@@ -4,6 +4,7 @@ import com.ssb.mysrpingboot01.src.entity.MyTable;
 import com.ssb.mysrpingboot01.src.mapper.MyTableMapper;
 import com.ssb.mysrpingboot01.src.service.IMyTableService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
@@ -16,5 +17,9 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class MyTableServiceImpl extends ServiceImpl<MyTableMapper, MyTable> implements IMyTableService {
+
+    @Autowired
+    private MyTableMapper mapper;
+
 
 }
