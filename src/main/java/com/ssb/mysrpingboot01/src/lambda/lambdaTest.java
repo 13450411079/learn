@@ -64,5 +64,6 @@ class Monkey {
     private String data;
     private Integer banana;
     private LocalDateTime date;
-    private Boolean sex;
+    private Boolean sex;123
+
 }
