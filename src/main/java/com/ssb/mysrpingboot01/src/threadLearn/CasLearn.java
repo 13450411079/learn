@@ -4,6 +4,7 @@ import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.concurrent.atomic.LongAdder;
+import java.util.concurrent.locks.ReentrantLock;
 
 public class CasLearn {
     public static  volatile int count = 0;
@@ -14,7 +15,7 @@ public class CasLearn {
         使用一个计数器进行实现。计数器初始值为线程的数量。当每一个线程完成自己任务后，计数器的值就会减一。
         当计数器的值为0时，表示所有的线程都已经完成一些任务，然后在CountDownLatch上等待的线程就可以恢复执行接下来的任务。*/
         CountDownLatch latch = new CountDownLatch(MAX_TREAD);
-
+        ReentrantLock
         //匿名内部类
         Runnable runnable =  new Runnable() {
             @Override
