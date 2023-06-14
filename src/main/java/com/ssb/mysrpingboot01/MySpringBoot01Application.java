@@ -17,6 +17,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingDeque;
 import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 @SpringBootApplication
 @EnableAspectJAutoProxy
@@ -30,6 +31,7 @@ public class MySpringBoot01Application {
 //        ConfigurationClassPostProcessor
 //                ImportBeanDefinitionRegistrar
 //        ImportSelector
+//        CopyOnWriteArrayList
     }
 
 }

@@ -51,6 +51,9 @@ public class lambdaTest {
             System.out.println(111);
         });
 
+            String str="abc";
+        System.out.println(111);
+        HashMap
 
     }
 
@@ -64,6 +67,6 @@ class Monkey {
     private String data;
     private Integer banana;
     private LocalDateTime date;
-    private Boolean sex;123
+    private Boolean sex;
 
 }
