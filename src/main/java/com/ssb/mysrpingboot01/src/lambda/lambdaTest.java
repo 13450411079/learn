@@ -53,7 +53,7 @@ public class lambdaTest {
 
             String str="abc";
         System.out.println(111);
-        HashMap
+//        HashMap
 
     }
 
